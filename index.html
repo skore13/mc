@@ -1,8 +1,44 @@
 <html>
 <head>
-Minecraft launcher
+<title>Minecraft launcher</title>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+.body {
+  background: #1c1e20;
+  background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
+  background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background-color: #2b2b2b;
+	text-align: center;
+}
+.dwn {
+	color:#13daec;
+	font-weight: bold;
+}
+</style>
 </head>
-<body>
-Hello world
+<body style="margin:0">
+<div class="body" style="height:100%;width:100%;">
+<a class="dwn" style="font-size:75px;">
+Stáhnout Launcher
+</span>
+</div>
+<script>
+centerit = function (what){
+$(what).css({
+        position:'absolute',
+        left: ($(what).parent().width() - $(what).outerWidth())/2,
+        top: ($(what).parent().height() - $(what).outerHeight())/2
+    });
+}
+$(window).resize(function(){
+    centerit(".dwn");
+});
+$("body").ready(function(){$(window).resize();})
+</script>
 </body>
 </html>
