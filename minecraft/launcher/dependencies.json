@@ -3,9 +3,9 @@
    "launcherVersion":{  
       "url":"http://mc.skorepa.info/minecraft/launcher/launcher.jar",
       "name":"launcher",
-      "version":"1.0 prerelease",
+      "version": "1.1",
       "checksum":{  
-         "":"545f3f3a6e2283ca55038b5b440654cd4b63aa0f"
+         "":"b46a4fd9298c4b803203e75345a24bd7253d55c5"
       },
       "unpack":false,
       "load":false
